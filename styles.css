@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Dark background */
+    color: #ffffff; /* White text */
+    overflow: hidden; /* Prevent scrolling */
+  }
+  
+  /* Map Container */
+  #map {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  /* Event Creation Form */
+  #event-form {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #2d2d2d; /* Dark gray background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it's above the map */
+  }
+  
+  #event-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3a3a3a; /* Slightly lighter gray */
+    color: #ffffff; /* White text */
+  }
+  
+  #event-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4a90e2; /* Blue button */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #event-form button:hover {
+    background-color: #357abd; /* Darker blue on hover */
+  }
+  
+  /* Event List */
+  #event-list {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #2d2d2d; /* Dark gray background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it's above the map */
+  }
+  
+  #event-list h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  #events {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #events li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #3a3a3a; /* Slightly lighter gray */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #events li strong {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  #events li span {
+    display: block;
+    font-size: 12px;
+    color: #cccccc; /* Light gray text */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #event-form, #event-list {
+      width: 90%;
+      left: 5%;
+      right: 5%;
+      top: 10px;
+    }
+  
+    #event-list {
+      top: 200px; /* Move event list below the form on small screens */
+    }
+  }
